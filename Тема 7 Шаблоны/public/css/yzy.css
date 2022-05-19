@@ -1,0 +1,39 @@
+.yzy h2 {
+    font-size: 72px;
+}
+
+.yzy p {
+    font-size: 25px;
+}
+
+.yzy h3 {
+    font-size: 40px;
+    margin-bottom: 5vh;
+}
+
+.yzy-img {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.yzy-img div {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.yzy-img div h3 {
+    font-size: 20px;
+    margin-bottom: 5vh;
+}
+ 
+.yzy-img img {
+    height: 50vh;
+}

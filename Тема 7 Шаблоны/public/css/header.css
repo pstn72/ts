@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 3vh 20vw;
+}
+
+header h1 a {
+    color: rgb(100, 100, 100);
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+header h1 a:hover {
+    color: rgb(255, 255, 255);
+}
+
+header nav a {
+    margin-left: 30px;
+    font-size: 30px;
+    color: rgb(100, 100, 100);
+    transition: 0.4s;
+}
+
+header nav a:hover {
+    color: rgb(255, 255, 255);
+}

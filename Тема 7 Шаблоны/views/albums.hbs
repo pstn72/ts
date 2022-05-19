@@ -1,0 +1,29 @@
+<main>
+    {{#each alb}}
+        <div class="album">
+            <img src="/img/{{id}}.jpg">
+            <h2>{{name}}</h2>
+            <div class="tracks" id="{{id}}" onclick="showTracks({{id}})">
+                {{#each tracks}}
+                    <nav> <p>{{no}}.</p> <p>{{name}}</p> </nav>
+                {{/each}}
+            </div>
+        </div>
+    {{/each}}
+</main>
+
+<script>
+    function showTracks(id) {
+        var tracks = document.getElementById(id);
+        tracks.style.height = "auto";
+        tracks.style.webkitMaskImage = 'none';
+        tracks.onclick = function() { hideTracks(id); };
+    }
+
+    function hideTracks(id) {
+        var tracks = document.getElementById(id);
+        tracks.style.height = "";
+        tracks.style.webkitMaskImage = '';
+        tracks.onclick = function() { showTracks(id); };
+    }
+</script>
